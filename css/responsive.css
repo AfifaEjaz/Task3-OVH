@@ -1,4 +1,387 @@
-@media screen and (max-width: 858px) {
+@media (max-width: 990px) {
+
+    /* NavBar  */
+
+    .logo img {
+        height: 50px;
+        line-height: 65px;
+        padding: 0.5rem 3rem;
+    }
+
+    .header_list {
+        margin-right: 10px;
+    }
+
+    .header_list li {
+        margin: 0 3px;
+        line-height: 45px;
+    }
+
+    .header_list li img {
+        height: 15px;
+        width: 15px;
+        margin: 14px 0 -4px 0px;
+    }
+
+    .header_list li a {
+        font-size: 11px;
+        padding: 5px 12px;
+        line-height: 55px;
+    }
+
+    .header_list li button {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .nav {
+        width: 90%;
+        height: 8vh;
+        margin: 1rem auto 0 auto;
+    }
+
+    .nav ul li {
+        margin: 0 3px;
+        line-height: 50px;
+    }
+
+    .nav ul li a {
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 6px;
+    }
+
+    .search_input input {
+        width: 200px;
+    }
+
+    /* Section 01 */
+
+    main {
+        height: 75vh;
+        padding: 1rem;
+    }
+
+    main div h3 {
+        font-size: 14px;
+    }
+
+    main div h1 {
+        font-size: 38px;
+    }
+
+    main div p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    main div img {
+        height: 400px;
+        width: 390px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .btns {
+        margin-top: 2rem;
+        width: 85%;
+    }
+
+    .btns button {
+        padding: 0.5rem 1rem;
+        font-size: 13px;
+    }
+
+    /* section 03  */
+
+    .about_section {
+        height: 80vh;
+        width: 90%;
+    }
+
+    .about_section div h3 {
+        font-size: 15px;
+    }
+
+    .about_section div h1 {
+        font-size: 40px;
+        padding-top: 1rem;
+    }
+
+    .about_section div p {
+        margin-top: 0.5rem;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    .about_section div img {
+        height: 390px;
+        width: 390px;
+    }
+
+    .about_content {
+        margin-top: 1rem;
+    }
+
+    .about_list {
+        margin: 0.5rem 0;
+    }
+
+    .about_list div ul li {
+        margin-top: 1rem;
+        font-size: 11px;
+    }
+
+
+    .about_content a {
+        font-size: 14px;
+    }
+
+
+    /* section 4 */
+
+    .offer_box h3 {
+        font-size: 16px;
+        padding-top: 2rem;
+    }
+
+    .offer_box h1 {
+        font-size: 35px;
+        padding-top: 1rem;
+    }
+
+    .offers {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .offer_item h2 {
+        font-size: 16px;
+    }
+
+    .offer_item p {
+        font-size: 13px;
+    }
+
+    .offer_item img {
+        height: 40%;
+        width: 30%;
+    }
+
+    .offer_item a {
+        font-size: 14px;
+    }
+
+    /* Section 05  */
+
+    .work_box {
+        width: 90%;
+    }
+
+    .work_box div {
+        height: 25vh;
+    }
+
+    .work_box div h1 {
+        padding-top: 2.5rem;
+        font-size: 70px;
+    }
+
+    .work_box div span {
+        left: 35%;
+        font-size: 12px;
+    }
+
+    /* Section 06  */
+
+
+    .dentist_box h3 {
+        font-size: 16px;
+    }
+
+    .dentist_box h1 {
+        font-size: 35px;
+    }
+
+    /* section 07  */
+
+    .appointment_section {
+        height: 60vh;
+    }
+
+    .appointment_content,
+    .appointment_image {
+        width: 50%;
+        padding: 2rem 1rem;
+    }
+
+    .appointment_content h3 {
+        font-size: 15px;
+    }
+
+    .appointment_content h1 {
+        font-size: 38px;
+        padding-top: 1rem;
+    }
+
+    .appointment_content p {
+        font-size: 14px;
+        margin: 0.5rem 0;
+    }
+
+    .oval_img {
+        height: 330px;
+        width: 360px;
+    }
+
+    .img3 {
+        height: 345px;
+        width: 240px;
+    }
+
+    /* section 08 */
+
+    .testimonial_section {
+        height: 125vh;
+    }
+
+    .testimonial {
+        padding: 3rem 1.5rem 0rem 4rem;
+        width: 55%;
+    }
+
+
+    .testimonial_section div h3 {
+        font-size: 14px;
+    }
+
+    .testimonial_section div h1 {
+        font-size: 30px;
+    }
+
+    .content1 {
+        width: 45%;
+    }
+
+    .content2 {
+        width: 55%;
+    }
+
+    .content1 img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .testimonial_cards_box1,
+    .testimonial_cards_box2 {
+        width: 50%;
+    }
+
+
+    .testimonial_cards_box2 {
+        left: 45%;
+    }
+
+    .testimonial_card {
+        padding: 1rem 1rem;
+    }
+
+    /* section 07  */
+
+
+
+    /* Section 09  */
+
+    .blog_box {
+        width: 85%;
+    }
+
+    .blog_box div h1 {
+        font-size: 30px;
+    }
+
+
+    .blog_cards_box {
+        margin-top: 2.5rem;
+    }
+
+    .blog_card_1 {
+        height: 390px;
+    }
+
+    .blog_card_2 {
+        height: 185px;
+    }
+
+    .blog_card_3 {
+        height: 185px;
+    }
+
+    /* Footer  */
+
+    footer {
+        height: 65vh;
+    }
+
+    .footer_box {
+        width: 90%;
+    }
+
+    .footer_header div {
+        margin-top: 0.5rem;
+    }
+
+    .footer_header input {
+        width: 200px;
+    }
+
+    .email_here_box div {
+        top: -14%;
+        left: 80%;
+    }
+
+    .icons_box {
+        gap: 0.5rem;
+    }
+
+    .icons_box a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .timing_box {
+        width: 40%;
+    }
+
+    .timing_box h1 {
+        font-size: 17px;
+    }
+
+    .timing_box p {
+        font-size: 12px;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .other_content_box {
+        gap: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* Navbar  */
+
+    header {
+        height: 8vh;
+        /* background-color: var(--cloudy); */
+    }
+
+    .header_list {
+        display: none;
+    }
 
     .logo img {
         height: 50px;
@@ -7,13 +390,15 @@
     }
 
     .nav {
+        background-color: var(--light-blue);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         display: none;
         position: fixed;
         width: 85%;
         margin: 0;
         height: 100vh;
         border-radius: 0;
-        top: 60px;
+        top: 45px;
         left: -100%;
         transition: all 0.5s;
     }
@@ -24,7 +409,7 @@
 
     .nav ul li {
         display: block;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     }
 
     .nav ul li a {
@@ -36,6 +421,383 @@
         display: block;
         left: 0;
     }
+
+    /* Section 01 */
+
+    main {
+        height: 135vh;
+        display: block;
+    }
+
+    .hero_content {
+        width: 100%;
+    }
+
+    .hero_image {
+        width: 60%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    main div h1 {
+        font-size: 40px;
+    }
+
+    main div p {
+        font-size: 15px;
+    }
+
+    main div img {
+        height: 378px;
+        width: 378px;
+    }
+
+    .content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content h3 {
+        margin-top: 1rem;
+    }
+
+    .btns {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .btns button {
+        font-size: 11px;
+        width: 30%;
+    }
+
+    /* Section 02 */
+    .success_section {
+        margin: 3rem 0 2rem 0;
+    }
+
+    .success_section h1 {
+        text-align: center;
+        font-size: 19px;
+        color: #FF9140;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .success_box {
+        width: 80%;
+        margin: 3rem auto 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+    }
+
+    .success_box div {
+        height: 170px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    .success_box div img {
+        width: 12vw;
+        height: 60px;
+    }
+
+    /* section 03  */
+
+    .about_section {
+        height: 140vh;
+        width: 85%;
+        display: block;
+    }
+
+    .about_section div {
+        width: 100%;
+    }
+
+    .about_section div h3 {
+        font-size: 15px;
+    }
+
+    .about_section div h1 {
+        font-size: 35px;
+    }
+
+    .about_section div p {
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .about_section>div>img {
+        height: 368px;
+        width: 368px;
+        margin: 0 0 0 4rem;
+    }
+
+    .about_content {
+        margin-top: 3rem;
+    }
+
+    .about_content div ul li {
+        list-style: none;
+    }
+
+    .about_list div ul li {
+        display: block;
+    }
+
+    /* section 06  */
+
+    .dentist_box h3 {
+        font-size: 14px;
+    }
+
+    .dentist_box h1 {
+        font-size: 30px;
+    }
+
+    .slider {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .slide {
+        height: fit-content;
+    }
+
+    .slide img {
+        width: 100%;
+    }
+
+    .slide-content h3 {
+        margin: 5px 0 5px;
+        font-size: 10px;
+    }
+
+    .slide-content p {
+        margin: 0 0 8px;
+        font-size: 9px;
+    }
+
+    .card {
+        width: 35%;
+        margin: 1rem auto;
+        display: block;
+    }
+
+
+    /* Section 07 */
+
+    .appointment_section {
+        /* background-color: #FF9140; */
+        background-color: var(--cloudy);
+        height: 110vh;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        border-radius: 30px;
+        align-items: flex-start;
+    }
+
+    .appointment_box {
+        /* background-color: var(--cloudy); */
+
+        width: 100%;
+        display: block;
+    }
+
+    .appointment_content,
+    .appointment_image {
+        width: 100%;
+        padding: 0rem 3rem;
+    }
+
+    .appointment_content h3 {
+        margin-top: 2rem;
+        font-size: 19px;
+        color: #FF9140;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .appointment_content h1 {
+        font-size: 45px;
+        font-weight: 600;
+        padding-top: 1.5rem;
+        font-family: "Source Serif 4", serif;
+    }
+
+    .appointment_content p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--zinc);
+        line-height: 1.6;
+        margin: 0.6rem 0;
+    }
+
+    .appointment_content button {
+        text-transform: uppercase;
+        color: var(--cloudy);
+        background-color: var(--blue);
+        border: none;
+        border-radius: 35px;
+        padding: 0.5rem 1.5rem;
+        font-size: 14px;
+    }
+
+    .appointment_image {
+        position: relative;
+    }
+
+    .oval_img {
+        position: absolute;
+        top: -7%;
+        height: 300px;
+        width: 409px;
+    }
+
+    .img3 {
+        position: absolute;
+        height: 300px;
+        width: 250px;
+        left: 27%;
+        top: -15%;
+    }
+
+    /* section 08 */
+
+    .testimonial_section {
+        margin-top: 6rem;
+        height: 210vh;
+        width: 100%;
+        background-color: var(--light-blue);
+    }
+
+    .testimonial {
+        padding: 3rem 2rem 0rem 6rem;
+        width: 100%;
+    }
+
+    .testimonial_box {
+        width: 100%;
+        display: block;
+    }
+
+    .testimonial_section div h3 {
+        font-size: 15px;
+        color: #FF9140;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
+    .testimonial_section div h1 {
+        font-size: 35px;
+        font-weight: 600;
+        padding-top: 1rem;
+        font-family: "Source Serif 4", serif;
+    }
+
+    .content1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content2 {
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .content1 img {
+        height: 430px;
+        width: 430px;
+        padding: 0;
+    }
+
+    .testimonial_cards_box1,
+    .testimonial_cards_box2 {
+
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .testimonial_cards_box1 {
+        margin-top: 2rem;
+        position: absolute;
+        /* top: -15%; */
+    }
+
+    .testimonial_cards_box2 {
+        position: absolute;
+        top: -5%;
+        left: 40%;
+    }
+
+    .testimonial_card {
+        width: 80%;
+        margin: auto;
+        height: fit-content;
+        position: relative;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+        background-color: #FFFFFF;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+
+    .testimonial_card p {
+        font-family: "DM Sans", sans-serif;
+        color: var(--zinc);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-top: 0.5rem;
+    }
+
+    .testimonial_card h4 {
+        font-family: "DM Sans", sans-serif;
+        padding-top: 1rem;
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .testimonial_card span {
+        color: #7688B6;
+        font-size: 8px;
+        font-weight: 500;
+    }
+
+    .testimonial_img1 {
+        border: 4px solid #C7F0FD;
+        border-radius: 15px;
+        position: absolute;
+        top: -15%;
+    }
+
+    .rating_img {
+        margin-top: 2rem;
+    }
+
+    /* Footer  */
+
+    footer {
+        background-color: var(--cloudy);
+        height: 80vh;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 @media (min-width: 800px) {

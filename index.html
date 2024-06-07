@@ -11,9 +11,8 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Fonts -->
-    <style>
-    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 
@@ -33,7 +32,7 @@
             <ul class="header_list">
                 <li><img src="./images/location.png" alt=""><a class="active" href="">St. Sanguin Number 40</a></li>
                 <li><img src="./images/phone.png" alt=""><a href="">+1234 - 4567 - 890</a></li>
-                <li><a href="">button</a></li>
+                <li><button>Appointment</button></li>
             </ul>
         </div>
 
@@ -42,8 +41,22 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Services</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Blog</a></li>
+                <li class="dropdown">
+                    <input id="check01" type="checkbox" name="menu" />
+                    <label for="check01">Pages<i class='bx bxs-chevron-down'></i></label>
+                    <ul class="submenu">
+                        <li class="dropdown_item"><a href="#">Item 1</a></li>
+                        <li class="dropdown_item"><a href="#">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <input id="check02" type="checkbox" name="menu" />
+                    <label for="check02">Blog <i class='bx bxs-chevron-down'></i></label>
+                    <ul class="submenu">
+                        <li class="dropdown_item"><a href="#">Item 1</a></li>
+                        <li class="dropdown_item"><a href="#">Item 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Contact</a></li>
                 <li class="search_input"><input type="text" placeholder="Search In here">
                     <div class="search_icon"><img src="./images/search.png" alt=""></div>
@@ -59,13 +72,16 @@
             <div class="content">
                 <h3>welcome to confident</h3>
                 <h1>High Quality & <br><span style="color: #3366FF;">Painless</span> Dentistry </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt ut
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et
-                    dolore magna <br>
+                    dolore magna
                     aliqua ut enim ad minim veniam, quis nostrud.</p>
                 <div class="btns">
                     <button>Contact us</button>
-                    <div><a href=""><img src="./images/play.png" alt=""></a></div>
+                    <div><a href="">
+                            <img src="./images/play.png" alt="">
+                            <span>Watch Video Profile</span>
+                        </a></div>
                 </div>
             </div>
         </div>
@@ -221,6 +237,112 @@
 
             <div class="dentists">
 
+                <div class="slider">
+                    <div class="slider-container">
+
+                        <!-- slide1 -->
+                        <div class="slide">
+                            <div class="card">
+                                <img src="./images/crousal1.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Marteen Bryant</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal2.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Julia Barbara</h3>
+                                    <p>General dentist</p>
+                                    <div class="social-icons">
+                                        <a href="#"><img src="./images/INSTAGRAM.png" alt="Instagram"></a>
+                                        <a href="#"><img src="./images/FACEBOOK.png" alt="Facebook"></a>
+                                        <a href="#"><img src="./images/LINKDLN.png" alt="LinkedIn"></a>
+                                        <a href="#"><img src="./images/TWITTER.png" alt="Close"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal3.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Natasha smith</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2  -->
+
+                        <div class="slide">
+                            <div class="card">
+                                <img src="./images/crousal2.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Julia Barbara</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal3.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Natasha smith</h3>
+                                    <p>General dentist</p>
+                                    <div class="social-icons">
+                                        <a href="#"><img src="./images/INSTAGRAM.png" alt="Instagram"></a>
+                                        <a href="#"><img src="./images/FACEBOOK.png" alt="Facebook"></a>
+                                        <a href="#"><img src="./images/LINKDLN.png" alt="LinkedIn"></a>
+                                        <a href="#"><img src="./images/TWITTER.png" alt="Close"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal1.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Marteen Bryant</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 03  -->
+                        <div class="slide">
+                            <div class="card">
+                                <img src="./images/crousal3.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Natasha smith</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal1.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Marteen Bryant</h3>
+                                    <p>General dentist</p>
+                                    <div class="social-icons">
+                                        <a href="#"><img src="./images/INSTAGRAM.png" alt="Instagram"></a>
+                                        <a href="#"><img src="./images/FACEBOOK.png" alt="Facebook"></a>
+                                        <a href="#"><img src="./images/LINKDLN.png" alt="LinkedIn"></a>
+                                        <a href="#"><img src="./images/TWITTER.png" alt="Close"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./images/crousal2.png" alt="Dr. Marteen Bryant">
+                                <div class="slide-content">
+                                    <h3>Dr. Julia Barbara</h3>
+                                    <p>General dentist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="navv prev">&#10094;</button>
+                    <button class="navv next">&#10095;</button>
+                </div>
             </div>
     </section>
 
@@ -253,33 +375,32 @@
                 <img src="./images/image4.png" alt="">
             </div>
             <div class="content2">
-                <div class="testimonial_cards_box">
-                   
-                        <div class="testimonial_card">
-                            <img class="testimonial_img1" src="./images/testimonial1.png" alt="">
-                            <img class="rating_img" src="./images/ratings.png" alt="">
-                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                                quod</p>
-                            <h4>Ryan Gigs</h4>
-                            <span>Patient</span>
-                        </div>
+                <div class="testimonial_cards_box1">
 
-                        <div class="testimonial_card">
-                            <img class="testimonial_img1" src="./images/testimonial1.png" alt="">
-                            <img class="rating_img" src="./images/ratings.png" alt="">
-                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
-                                quod</p>
-                            <h4>Ryan Gigs</h4>
-                            <span>Patient</span>
-                        </div>
-                   
-                    
+                    <div class="testimonial_card">
+                        <img class="testimonial_img1" src="./images/testimonial1.png" alt="">
+                        <img class="rating_img" src="./images/ratings.png" alt="">
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod</p>
+                        <h4>Ryan Gigs</h4>
+                        <span>Patient</span>
+                    </div>
+
+                    <div class="testimonial_card">
+                        <img class="testimonial_img1" src="./images/testimonial2.png" alt="">
+                        <img class="rating_img" src="./images/ratings.png" alt="">
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                            quod</p>
+                        <h4>Ryan Gigs</h4>
+                        <span>Patient</span>
+                    </div>
+
                 </div>
 
-                <div class="testimonial_cards_box">
-                   
+                <div class="testimonial_cards_box2">
+
                     <div class="testimonial_card">
-                        <img class="testimonial_img1" src="./images/testimonial1.png" alt="">
+                        <img class="testimonial_img1" src="./images/testimonial3.png" alt="">
                         <img class="rating_img" src="./images/ratings.png" alt="">
                         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
                             quod</p>
@@ -288,20 +409,136 @@
                     </div>
 
                     <div class="testimonial_card">
-                        <img class="testimonial_img1" src="./images/testimonial1.png" alt="">
+                        <img class="testimonial_img1" src="./images/testimonial4.png" alt="">
                         <img class="rating_img" src="./images/ratings.png" alt="">
                         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
                             quod</p>
                         <h4>Ryan Gigs</h4>
                         <span>Patient</span>
                     </div>
-               
-                
-            </div>
-               
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Section 09 -->
+
+    <section class="blog_section">
+        <div class="blog_box">
+            <h3>OUR BLOG</h3>
+            <div>
+                <h1>Our Latest Blog & News</h1>
+                <button>Find More</button>
+            </div>
+
+            <div class="blog_cards_box">
+                <div class="blog_card_1">
+                    <div class="blog_content">
+                        <span>December 15, 2024</span>
+                        <p>Highlight: benefits of routine dental check-ups in children under 12 years old</p>
+                        <a href="">Read More ></a>
+                    </div>
+                </div>
+                <div class="right_side">
+                    <div class="blog_card_2">
+                        <div class="blog_content">
+                            <span>December 15, 2024</span>
+                            <p>Highlight: benefits of routine dental check-ups in children under 12 years old</p>
+                            <a href="">Read More ></a>
+                        </div>
+                    </div>
+                    <div class="blog_card_3">
+                        <div class="blog_content">
+                            <span>December 15, 2024</span>
+                            <p>Highlight: benefits of routine dental check-ups in children under 12 years old</p>
+                            <a href="">Read More ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer>
+        <div class="footer_box">
+            <div class="footer_header">
+                <img class="logo" src="./images/logo.png" alt="">
+                <div>
+                    <div class="email_here_box">
+                        <input type="text" placeholder="Your Email here">
+                        <div><img src="./images/footerEmailIcon.png" alt=""></div>
+                    </div>
+                    <div class="icons_box">
+                        <a href=""><img src=".//images/INSTAGRAM.png" alt=""></a>
+                        <a href=""><img src=".//images/FACEBOOK.png" alt=""></a>
+                        <a href=""><img src=".//images/LINKDLN.png" alt=""></a>
+                        <a href=""><img src=".//images/TWITTER.png" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main_footer">
+
+                <div class="timing_box">
+                    <h1>working hours</h1>
+                    <div class="timings">
+
+                        <span>Mon - Fri</span>
+                        <span>9AM - 8PM</span>
+                    </div>
+                    <div class="timings">
+                        <span>Sat - Sun</span>
+                        <span>9AM - 8PM</span>
+                    </div>
+                    <p>© 2024 CONFIDENT All Right Reserved. </p>
+                </div>
+                <div class="other_content_box">
+                    <div>
+                        <h1>About</h1>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href=""> About Us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="" Contact></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Pages</h1>
+                        <ul>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Dentist</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">404 Page</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Support</h1>
+                        <ul>
+                            <li><a href=""> Contact Us</a></li>
+                            <li><a href=""> Booking online</a></li>
+                            <li><a href=""> Social Media</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Contact Us</h1>
+                        <ul>
+                            <li><a href=""> Social Media</a></li>
+                            <li><a href=""> WhatsApp</a></li>
+                            <li><a href="">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
 
 
 </body>

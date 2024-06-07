@@ -16,10 +16,55 @@
     --cloudy: #C7F0FD;
 }
 
+.dropdown input,
+.dropdown ul.submenu {
+    display: none;
+}
+
+.dropdown input:checked~ul.submenu {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    background-color: var(--cloudy);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    list-style: none;
+    top: 22%;
+
+}
+
+.dropdown label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--zinc);
+    padding: 7px 13px;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+/* Submenu Items */
+.dropdown_item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown_item>a {
+    display: block;
+    color: var(--zinc);
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 2px 13px;
+    border-radius: 3px;
+}
+
 header {
     height: 30vh;
     background-color: var(--light-blue);
-
 }
 
 .first_nav {
@@ -30,7 +75,6 @@ header {
     height: 55px;
     line-height: 75px;
     padding: 0.5rem 6rem;
-
 }
 
 .header_list {
@@ -60,6 +104,16 @@ header {
     border-radius: 3px;
 }
 
+.header_list li button {
+    text-transform: uppercase;
+    color: var(--cloudy);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 35px;
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+}
+
 .checkbtn {
     font-size: 30px;
     color: var(--blue);
@@ -76,7 +130,7 @@ header {
 
 .nav {
     background-color: var(--cloudy);
-    width: 80%;
+    width: 85%;
     border-radius: 30px;
     height: 10vh;
     margin: 1.5rem auto 0 auto;
@@ -87,13 +141,13 @@ header {
     width: 95%;
 }
 
-.nav ul li {
+.nav>ul>li {
     display: inline-block;
     margin: 0 5px;
-    line-height: 60px;
+    line-height: 50px;
 }
 
-.nav ul li a {
+.nav>ul>li>a {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -105,7 +159,7 @@ header {
 
 .search_input {
     position: relative;
-    padding-left: 9rem;
+    float: right;
 }
 
 .search_input input {
@@ -114,6 +168,7 @@ header {
     padding: 0.7rem 1rem;
     border: none;
     position: relative;
+    margin-top: 0.7rem;
 }
 
 .search_input input::-webkit-input-placeholder {
@@ -137,7 +192,7 @@ header {
 /* Section 01 */
 
 main {
-    height: 100vh;
+    height: 90vh;
     background-color: var(--light-blue);
     padding: 3rem;
     display: flex;
@@ -199,21 +254,28 @@ main div img {
     font-size: 14px;
 }
 
-.btns a {
+.btns>div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns>div>a {
     color: var(--zinc);
     text-decoration: none;
     font-weight: 500;
     font-family: "DM Sans", sans-serif;
-    padding-bottom: 1rem;
-    line-height: 10px;
-
+    padding-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btns a img {
     height: 5vh;
     width: 3vw;
 }
-
 
 /* Section 02 */
 .success_section {
@@ -273,7 +335,7 @@ main div img {
 }
 
 .about_section div h1 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     padding-top: 1.5rem;
     font-family: "Source Serif 4", serif;
@@ -302,7 +364,7 @@ main div img {
 }
 
 .about_list {
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
     display: flex;
 }
 
@@ -454,9 +516,12 @@ main div img {
 
 /* Section 06  */
 
+.dentist_section{
+    margin-top: 6rem;
+}
 
 .dentist_box h3 {
-    font-size: 19px;
+    font-size: 16px;
     color: #FF9140;
     font-weight: 700;
     text-transform: uppercase;
@@ -465,13 +530,108 @@ main div img {
 }
 
 .dentist_box h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     padding-top: 1.5rem;
     font-family: "Source Serif 4", serif;
     text-align: center;
 
 }
+
+/* Basic styling for the slider */
+.slider {
+    width: 80%;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 80vh;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.slide-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide-content h3 {
+    margin: 10px 0 5px;
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--blue);
+}
+
+.slide-content p {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.social-icons a img {
+    width: 22px;
+    height: 22px;
+}
+
+.navv {
+    background-color: #fff;
+    width: fit-content;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px 10px;
+    color: #2952CE;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navv.prev {
+    left: 10px;
+}
+
+.navv.next {
+    right: 10px;
+}
+
+
+.card {
+    width: 25%;
+    height: fit-content;
+    display: inline-block;
+    border: 5px solid var(--cloudy);
+    border-radius: 10px;
+    background-color: var(--cloudy);
+    margin: 0 1rem;
+}
+
 
 /* section 07  */
 
@@ -553,8 +713,8 @@ main div img {
 /* section 08 */
 
 .testimonial_section {
-    margin-top: 4rem;
-    height: 100vh;
+    margin-top: 6rem;
+    height: 125vh;
     width: 100%;
     background-color: var(--light-blue);
 }
@@ -570,7 +730,7 @@ main div img {
 }
 
 .testimonial_section div h3 {
-    font-size: 19px;
+    font-size: 15px;
     color: #FF9140;
     font-weight: 700;
     text-transform: uppercase;
@@ -578,9 +738,9 @@ main div img {
 }
 
 .testimonial_section div h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     font-family: "Source Serif 4", serif;
 }
 
@@ -588,13 +748,13 @@ main div img {
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .content2 {
     width: 60%;
     display: flex;
-    
+    position: relative;
 }
 
 .content1 img {
@@ -603,21 +763,35 @@ main div img {
     padding: 0;
 }
 
-.testimonial_cards_box {
-    width: 50%;
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
+.testimonial_cards_box1,
+.testimonial_cards_box2 {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial_cards_box1 {
+    margin-top: 2rem;
+    position: absolute;
+    /* top: -15%; */
+}
+
+.testimonial_cards_box2 {
+    position: absolute;
+    top: -5%;
+    left: 40%;
 }
 
 .testimonial_card {
-    width: 70%;
+    width: 80%;
     margin: auto;
     height: fit-content;
     position: relative;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     border-radius: 10px;
     margin-top: 2rem;
 }
@@ -625,34 +799,265 @@ main div img {
 .testimonial_card p {
     font-family: "DM Sans", sans-serif;
     color: var(--zinc);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.6;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .testimonial_card h4 {
     font-family: "DM Sans", sans-serif;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     color: var(--blue);
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 .testimonial_card span {
     color: #7688B6;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 8px;
+    font-weight: 500;
 }
 
-.testimonial_img1{
+.testimonial_img1 {
     border: 4px solid #C7F0FD;
     border-radius: 15px;
     position: absolute;
     top: -15%;
-    
 }
 
-.rating_img{
+.rating_img {
     margin-top: 2rem;
+}
+
+/* Section 09  */
+
+.blog_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_box {
+    height: 80vh;
+    width: 80%;
+    /* background-color: #e5a374; */
+}
+
+.blog_box h3 {
+    font-size: 15px;
+    color: #FF9140;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.blog_box div h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Source Serif 4", serif;
+    color: var(--blue);
+    display: inline;
+}
+
+.blog_box div button {
+    text-transform: uppercase;
+    color: var(--cloudy);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 35px;
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+    float: right;
+}
+
+.blog_cards_box {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.blog_cards_box>div {
+    width: 50%;
+}
+
+.right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Adding gap between the two cards on the right side */
+}
+
+.blog_card_1,
+.blog_card_2,
+.blog_card_3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog_card_1 {
+    background-image: url("../images/blogImg1.png"), linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(69, 205, 247, 1) 100%);
+    height: 415px;
+}
+
+.blog_card_2 {
+    background-image: url("../images/blogImg2.png"), linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(69, 205, 247, 1) 100%);
+    height: 200px;
+}
+
+.blog_card_3 {
+    background-image: url("../images/blogImg3.png"), linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(69, 205, 247, 1) 100%);
+    height: 200px;
+}
+
+
+.blog_content {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.blog_content span {
+    color: #ADC2FF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.blog_content p {
+    padding: 1rem 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blog_content a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Footer  */
+
+footer {
+    background-color: var(--cloudy);
+    height: 75vh;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_box {
+    width: 80%;
+    height: 50vh;
+    margin-top: 2.5rem;
+}
+
+.footer_header {
+    margin: 0 0 2rem 0;
+}
+
+.footer_header div {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_header input {
+    width: 250px;
+    border-radius: 30px;
+    padding: 0.7rem 1rem;
+    border: none;
+}
+
+.email_here_box div {
+    position: absolute;
+    top: -23%;
+    left: 83%;
+    cursor: pointer;
+}
+
+.icons_box {
+    display: flex;
+    gap: 1rem;
+}
+
+.main_footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.timing_box {
+    width: 35%;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.timing_box h1 {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--zinc);
+    margin-bottom: 1rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.timing_box p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--zinc);
+    margin: 2rem 0 0.5rem 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.timings {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.timings span {
+    color: #5C85FF;
+    padding-top: 1rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.other_content_box {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    margin-left: 3rem;
+}
+
+.other_content_box h1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--zinc);
+    margin: 1rem 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.other_content_box div ul {
+    list-style: none;
+}
+
+.other_content_box div ul li a {
+    text-decoration: none;
+    line-height: 2.5;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--zinc);
+    margin: 1rem 0;
+    font-family: "DM Sans", sans-serif;
 }
